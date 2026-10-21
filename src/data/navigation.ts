@@ -2,7 +2,7 @@ import { Globe, Mail, MapPin, Phone, Stethoscope, Truck } from "lucide-react";
 import type { ContactItem, HeroContent, NavLink, SectionCopy } from "@/types";
 
 export const company = {
-  phone: { label: "+62 21 8984 1234", href: "tel:+622189841234" },
+  phone: { label: "+62 852-8694-2884", href: "tel:+6285286942884" },
   email: { label: "info@globalsinergimedica.com", href: "mailto:info@globalsinergimedica.com" },
   website: { label: "www.globalsinergimedica.com", href: "https://www.globalsinergimedica.com" },
   address:
@@ -13,7 +13,7 @@ export const company = {
 
 export const brand = {
   name: "PT Global Sinergi Medica",
-  wordmark: { lead: "Global Sinergi", accent: "Medica" },
+  wordmark: { lead: "Global Sinergi Medica", accent: "Medica" },
   logo: {
     src: "/assets/logo/gsm-mark.png",
     alt: "Global Sinergi Medica logo",
@@ -41,6 +41,7 @@ export const loginCta: NavLink = {
 };
 
 export const hero: HeroContent = {
+  eyebrow: "Largest Medical Equipment Distributor in Indonesia",
   badge: "Bringing Solutions, Building Better Health.",
   titleLead: "End-to-End",
   titleRotating: ["Orthopedic", "Trauma", "Spine", "Arthroplasty"],
@@ -64,7 +65,7 @@ export const hero: HeroContent = {
 export const sectionCopy = {
   categories: {
     eyebrow: "Our Solutions",
-    title: "8 Product Categories",
+    title: "7 Product Categories",
     description: "Complete orthopedic solutions, from trauma implants to hospital services.",
   },
   products: {
@@ -83,8 +84,9 @@ export const sectionCopy = {
     description: "From hospital to patient: implants, instruments and equipment from one partner.",
   },
   whyUs: {
-    eyebrow: "Hospital Solution",
-    title: "One partner, from hospital to patient",
+    eyebrow: "Our Purpose",
+    title: "Vision & Mission",
+    description: "The principles that guide how we serve healthcare in Indonesia.",
   },
   process: {
     eyebrow: "How It Works",

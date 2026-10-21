@@ -39,11 +39,26 @@ export function Hero() {
               </span>
               {hero.badge}
             </p>
+            
+            <p
+              className="mt-6 mb-3 flex animate-fade-up items-center gap-2
+              text-xs font-semibold uppercase tracking-[0.22em]
+              text-lime-300 sm:text-sm motion-reduce:animate-none"
+              style={staggerStyle(90)}
+            >
+              <span
+              aria-hidden
+              className="h-0.5 w-10 shrink-0 bg-lime-400"
+              />
+              {hero.eyebrow}
+            </p>
 
             <h1
               id="hero-title"
               aria-label={`${hero.titleLead} ${hero.titleRotating[0]} ${hero.titleTail}`}
-              className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-display"
+              className="mt-0 text-4xl font-bold leading-[1.08]
+              tracking-tight text-white
+              sm:text-5xl md:text-5xl lg:text-6xl"
             >
               <span
                 aria-hidden
@@ -116,7 +131,7 @@ export function Hero() {
               height={hero.image.height}
               sizes="(min-width: 1024px) 620px, 100vw"
               preload
-              className="block h-auto w-full animate-hero-rise rounded-hero shadow-glass ring-1 ring-white/15"
+              className="block h-auto w-full animate-hero-rise"
             />
             {hero.highlights.map(({ id, icon: Icon, title, caption }, index) => (
               <div
