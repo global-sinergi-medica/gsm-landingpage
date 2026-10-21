@@ -1,0 +1,150 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@layer base {
+  :root {
+    interpolate-size: allow-keywords;
+    --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-lime-500 text-ink;
+  }
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-container px-5 md:px-8 xl:px-0;
+}
+
+@utility bg-grid-size {
+  background-size: 48px 48px;
+}
+
+/* Reveal-on-scroll variants, toggled by the Reveal client component. */
+@layer components {
+  [data-reveal] {
+    opacity: 0;
+    transition-property: opacity, transform, filter, clip-path;
+    transition-duration: 0.9s;
+    transition-timing-function: var(--ease-out-expo);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  [data-reveal="fade-up"] {
+    transform: translateY(40px);
+  }
+
+  [data-reveal="zoom-in"] {
+    transform: scale(0.82);
+  }
+
+  [data-reveal="slide-left"] {
+    transform: translateX(-64px);
+  }
+
+  [data-reveal="slide-right"] {
+    transform: translateX(64px);
+  }
+
+  [data-reveal="blur-in"] {
+    filter: blur(14px);
+    transform: translateY(24px) scale(0.97);
+  }
+
+  [data-reveal="flip-up"] {
+    transform: perspective(900px) rotateX(40deg) translateY(48px);
+    transform-origin: 50% 100%;
+  }
+
+  [data-reveal="clip-reveal"] {
+    opacity: 1;
+    clip-path: inset(0 100% 0 0 round 32px);
+    transition-duration: 1.3s;
+  }
+
+  [data-reveal="draw"] {
+    opacity: 1;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition-duration: 1.6s;
+  }
+
+  [data-reveal][data-visible="true"] {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  [data-reveal="clip-reveal"][data-visible="true"] {
+    clip-path: inset(0 0 0 0 round 32px);
+  }
+
+  @media (scripting: none) {
+    [data-reveal] {
+      opacity: 1;
+      transform: none;
+      filter: none;
+      clip-path: none;
+    }
+  }
+
+  details.faq::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition:
+      block-size 0.45s var(--ease-out-expo),
+      content-visibility 0.45s allow-discrete;
+  }
+
+  details.faq[open]::details-content {
+    block-size: auto;
+  }
+}
+
+@layer components {
+  .scroll-progress {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .scroll-progress {
+      animation: scroll-progress linear both;
+      animation-timeline: scroll(root block);
+    }
+  }
+}
+
+@keyframes scroll-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    clip-path: none;
+  }
+}
