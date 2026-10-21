@@ -12,7 +12,7 @@ import { products } from "@/data/products";
 export const metadata: Metadata = {
   title: "Product Catalog — PT Global Sinergi Medica",
   description:
-    "Orthopedic implants, surgical instruments, medical equipment and hospital services. Filter by category and request a quote.",
+    "Orthopedic implants, surgical instruments, and medical equipment. Filter by category and request a quote.",
 };
 
 export default function CatalogPage() {

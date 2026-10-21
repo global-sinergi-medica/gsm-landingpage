@@ -5,13 +5,13 @@ export const faqs: Faq[] = [
     id: "range",
     question: "What products do you supply?",
     answer:
-      "We supply orthopedic trauma implants, arthroplasty, arthroscopy, spine and maxillofacial (CMF) systems, surgical instruments and power tools, and medical equipment such as arthroscopy towers and RF generators.",
+      "We supply a comprehensive range of medical devices and surgical solutions, specializing in orthopedic implants, arthroscopy systems, spine and maxillofacial solutions, surgical instruments, and advanced medical equipment.",
   },
   {
     id: "sterile",
-    question: "Are implants supplied sterile?",
+    question: "Where do your products come from?",
     answer:
-      "It depends on the product. Each catalog item lists its sterile status and unit (pcs or set), so you can see it before you request a quote.",
+      "Our products are sourced from trusted medical device manufacturers in Germany, France, Switzerland, Turkey, China, the United Kingdom, the United States, and Indonesia. In 2026, we collaborate with international and local manufacturers and brand partners to supply high-quality medical devices, orthopedic implants, surgical instruments, and advanced medical equipment to healthcare professionals and medical institutions.",
   },
   {
     id: "quote",

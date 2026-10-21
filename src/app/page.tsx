@@ -9,7 +9,7 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { ProductGallery } from "@/components/sections/ProductGallery";
 import { ProductSpotlight } from "@/components/sections/ProductSpotlight";
 import { StatsBar } from "@/components/sections/StatsBar";
-import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
+import { OurPurpose } from "@/components/sections/OurPurpose";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         <CategoryShowcase />
         <Catalog />
         <ProductSpotlight />
-        <WhyChooseUs />
+        <OurPurpose />
         <HowItWorks />
         <ProductGallery />
         <Faq />

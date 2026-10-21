@@ -27,9 +27,6 @@ export function BrandLogo({ tone = "dark", className }: BrandLogoProps) {
         >
           {brand.wordmark.lead}
         </span>
-        <span className="mt-1 text-caption tracking-[0.32em] text-teal-500">
-          {brand.wordmark.accent}
-        </span>
       </span>
     </span>
   );

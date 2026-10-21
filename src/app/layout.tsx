@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "PT Global Sinergi Medica — End-to-End Orthopedic Solutions",
   description:
-    "Orthopedic implants, surgical instruments, medical equipment and hospital services with nationwide distribution and clinical support.",
+    "The largest medical equipment distributor in Indonesia, orthopedic implants, surgical instruments, medical equipment and hospital services with nationwide distribution and clinical support.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import { ComponentType } from "react";
 
 export interface NavLink {
   label: string;
@@ -21,7 +22,7 @@ export interface Stat {
 
 export interface Category {
   id: string;
-  icon: LucideIcon;
+  icon: ComponentType<React.SVGProps<SVGSVGElement>>;
   label: string;
   image?: ImageAsset;
 }
@@ -63,6 +64,7 @@ export interface HeroHighlight {
 }
 
 export interface HeroContent {
+  eyebrow: string;
   badge: string;
   titleLead: string;
   titleRotating: [string, ...string[]];
