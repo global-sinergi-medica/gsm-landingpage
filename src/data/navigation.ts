@@ -37,7 +37,7 @@ export const quoteCta: NavLink = { label: "Request Quote", href: "/#contact" };
 
 export const loginCta: NavLink = {
   label: "Login",
-  href: process.env.NEXT_PUBLIC_ERP_LOGIN_URL ?? "https://erp.globalsinergimedica.com/login",
+  href: "/login",
 };
 
 export const hero: HeroContent = {
