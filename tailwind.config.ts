@@ -159,6 +159,11 @@ const config: Config = {
           from: { opacity: "0", transform: "translateX(24px)" },
           to: { opacity: "1", transform: "none" },
         },
+        shake: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "20%, 60%": { transform: "translateX(-6px)" },
+          "40%, 80%": { transform: "translateX(6px)" },
+        },
       },
       animation: {
         float: "float 6s ease-in-out infinite",
@@ -184,6 +189,7 @@ const config: Config = {
         "spotlight-in": "spotlight-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both",
         "slide-in-right":
           "slide-in-right 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--stagger, 0ms) both",
+        shake: "shake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both",
       },
     },
   },
