@@ -37,7 +37,7 @@ export interface Product {
   material: string;
   sterile: string;
   unit: string;
-  image: ImageAsset;
+  image?: ImageAsset;
   /** Full-bleed photo (services) instead of a transparent product cut-out. */
   photo?: boolean;
 }
