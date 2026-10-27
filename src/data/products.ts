@@ -26,12 +26,12 @@ export const products: Product[] = [
     slug: "t-locking-plate",
     category: "trauma-implant",
     group: "Locking Plate",
-    name: "T – Locking Plate",
+    name: "T - Locking Plate",
     description: "T shape locking plate system",
     material: "Stainless Steel / Titanium",
     sterile: "Yes",
     unit: "Pcs",
-    image: image("t-locking-plate", "T – Locking Plate"),
+    image: image("t-locking-plate", "T - Locking Plate"),
   },
   {
     id: "GSM-01-03",
@@ -395,7 +395,7 @@ export const products: Product[] = [
   },
   {
     id: "GSM-06-11",
-    slug: "drill-system",
+    slug: "modular-handpiece",
     category: "surgical-instrument",
     group: "Power Tools",
     name: "Modular Handpiece",
@@ -407,7 +407,7 @@ export const products: Product[] = [
   },
   {
     id: "GSM-06-12",
-    slug: "saw-system",
+    slug: "modular-saw",
     category: "surgical-instrument",
     group: "Power Tools",
     name: "Modular Saw",
@@ -671,7 +671,7 @@ export const products: Product[] = [
   },
   {
     id: "GSM-07-10",
-    slug: "Charger Type 02",
+    slug: "charger-type-02",
     category: "medical-equipment",
     group: "Charger",
     name: "Charger Type 02",
