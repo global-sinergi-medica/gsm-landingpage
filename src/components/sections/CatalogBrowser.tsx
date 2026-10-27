@@ -108,7 +108,7 @@ export function CatalogBrowser({ active = ALL }: { active?: string }) {
   ];
 
   return (
-    <div className="container-page grid gap-8 py-12 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-12 lg:py-16">
+    <div className="container-page grid grid-cols-1 gap-8 py-12 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-12 lg:py-16">
       <aside className="lg:sticky lg:top-28 lg:self-start">
         <label className="relative block">
           <span className="sr-only">Search products</span>
