@@ -3,7 +3,7 @@ import type { ContactItem, HeroContent, NavLink, SectionCopy } from "@/types";
 
 export const company = {
   phone: { label: "+62 852-8694-2884", href: "tel:+6285286942884" },
-  email: { label: "info@globalsinergimedica.com", href: "mailto:info@globalsinergimedica.com" },
+  email: { label: "info@globalsinergimedica.co.id", href: "mailto:info@globalsinergimedica.com" },
   website: { label: "www.globalsinergimedica.com", href: "https://www.globalsinergimedica.com" },
   address:
     "Jl. Western Boulevard Jl. Grand Wisata No.28 Blok BG 01, Lambangjaya, Kec. Tambun Sel., Kabupaten Bekasi, Jawa Barat 17510",
